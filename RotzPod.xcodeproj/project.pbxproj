@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6EC30D9C7ECD1127BEE27986 /* libPods-RotzPod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80437B892F4D8A1BE6311072 /* libPods-RotzPod.a */; };
+		B46CD0CA21824D9F005C4142 /* MagicWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46CD0C921824D9F005C4142 /* MagicWork.swift */; };
 		B4C17B2121824BA200437E53 /* RotzPod.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C17B1F21824BA200437E53 /* RotzPod.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		80437B892F4D8A1BE6311072 /* libPods-RotzPod.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RotzPod.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		867BBF9F132A540F82DDB197 /* Pods-RotzPod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RotzPod.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RotzPod/Pods-RotzPod.debug.xcconfig"; sourceTree = "<group>"; };
+		B46CD0C921824D9F005C4142 /* MagicWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicWork.swift; sourceTree = "<group>"; };
 		B4C17B1C21824BA200437E53 /* RotzPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RotzPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C17B1F21824BA200437E53 /* RotzPod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RotzPod.h; sourceTree = "<group>"; };
 		B4C17B2021824BA200437E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3D9E8C4E283E02F3E56077D /* Pods-RotzPod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RotzPod.release.xcconfig"; path = "Pods/Target Support Files/Pods-RotzPod/Pods-RotzPod.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +27,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EC30D9C7ECD1127BEE27986 /* libPods-RotzPod.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A100C64B00972E78740DEA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				867BBF9F132A540F82DDB197 /* Pods-RotzPod.debug.xcconfig */,
+				F3D9E8C4E283E02F3E56077D /* Pods-RotzPod.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B48351241320F09DCCC0B1E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80437B892F4D8A1BE6311072 /* libPods-RotzPod.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B4C17B1221824BA200437E53 = {
 			isa = PBXGroup;
 			children = (
 				B4C17B1E21824BA200437E53 /* RotzPod */,
 				B4C17B1D21824BA200437E53 /* Products */,
+				1A100C64B00972E78740DEA3 /* Pods */,
+				B48351241320F09DCCC0B1E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,6 +74,7 @@
 			children = (
 				B4C17B1F21824BA200437E53 /* RotzPod.h */,
 				B4C17B2021824BA200437E53 /* Info.plist */,
+				B46CD0C921824D9F005C4142 /* MagicWork.swift */,
 			);
 			path = RotzPod;
 			sourceTree = "<group>";
@@ -70,6 +97,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4C17B2421824BA200437E53 /* Build configuration list for PBXNativeTarget "RotzPod" */;
 			buildPhases = (
+				2AEFF594B0180953998293BE /* [CP] Check Pods Manifest.lock */,
 				B4C17B1721824BA200437E53 /* Headers */,
 				B4C17B1821824BA200437E53 /* Sources */,
 				B4C17B1921824BA200437E53 /* Frameworks */,
@@ -95,6 +123,7 @@
 				TargetAttributes = {
 					B4C17B1B21824BA200437E53 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -125,11 +154,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2AEFF594B0180953998293BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RotzPod-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B4C17B1821824BA200437E53 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B46CD0CA21824D9F005C4142 /* MagicWork.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +315,9 @@
 		};
 		B4C17B2521824BA200437E53 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 867BBF9F132A540F82DDB197 /* Pods-RotzPod.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +335,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.LiehrIT.RotzPod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,7 +343,9 @@
 		};
 		B4C17B2621824BA200437E53 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3D9E8C4E283E02F3E56077D /* Pods-RotzPod.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
